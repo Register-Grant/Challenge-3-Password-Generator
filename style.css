@@ -93,6 +93,17 @@ button[disabled] {
   background: #c0c7cf;
 }
 
+.options {
+ display: grid;
+ grid-template-columns: auto auto;
+ row-gap: 1rem;
+ column-gap: 3rem;
+}
+
+#includeUppercase {
+  vertical-align: middle;
+}
+
 .float-right {
   float: right;
 }

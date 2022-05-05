@@ -1,5 +1,7 @@
 // Assignment code here
-
+function fun() {
+  prompt ("This is a prompt box", "Hello world");
+  }
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
