@@ -24,7 +24,7 @@ function writePassword() {
     var totalLengthPassword = prompt("How many characters long would you like your password to be?\n8-128");
 
     if (totalLengthPassword < 8 || totalLengthPassword > 128) {
-      alert("Your password needs to be between 8 and 128 characters. Please try again.") 
+      alert("Your password needs to be between 8 and 128 characters. Please try again."); 
     } 
     
     // Confirming password parameters
@@ -44,6 +44,14 @@ function writePassword() {
     if (allCharacters.length === 0) {
       alert("Not sure why this is so difficult for you to understand, but you gotta hit yes on one of those promts there, chief...");
     }
+    // For loop to take all the available characters, shake 'em up like scrabble, and pull out a password
+    else {
+      for (var i = 0; i < totalLengthPassword; i++) {
+      var random = Math.floor(Math.random() * allCharacters.length);
+      createdPassword += allCharacters[random];
+    }
+  }
 }
-
+// Display the password
+document.getElementById("password").innerHTML = createdPassword;
 }
