@@ -1,8 +1,7 @@
 // Static variable
 const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const hasUppercaseLetters = uppercaseLetters.split("");
-const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
-const hasLowercaseLetters = lowercaseLetters.split("");
+const hasLowercaseLetters = Array.from("abcdefghijklmnopqrstuvwxyz");
 const numbers = "1234567890";
 const hasNumbers = numbers.split("");
 const symbols = "!@#$%^&*()[]{}:;',./<>?~`"
